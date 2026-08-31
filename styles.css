@@ -1,0 +1,75 @@
+/* Jennifer Morgan portfolio — static, framework-free build */
+:root{
+  --ink:#17333a;
+  --ink-2:#29474d;
+  --muted:#667578;
+  --blue:#6f8992;
+  --green:#738c7d;
+  --paper:#fbfaf6;
+  --soft:#eef2ed;
+  --line:#d6ded9;
+  --accent:#b77a55;
+  --white:#fff;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: Arial, Helvetica, sans-serif;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65}
+a{color:inherit}
+.shell{width:min(calc(100% - 48px),var(--max));margin:auto}
+.skip-link{position:absolute;left:-9999px;top:auto}
+.skip-link:focus{left:16px;top:16px;background:var(--white);padding:10px 14px;z-index:100;border:2px solid var(--ink)}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{text-decoration:none;font-weight:800;font-size:1.2rem;letter-spacing:.04em}.brand span{color:var(--accent)}
+.nav-links{display:flex;align-items:center;gap:28px;font-size:.9rem}
+.nav-links a{text-decoration:none}.nav-links a:hover{text-decoration:underline;text-underline-offset:5px}
+.nav-cta{padding:9px 16px;border:1px solid var(--ink);border-radius:999px}
+.nav-toggle{display:none;background:none;border:0}
+.hero{padding:clamp(76px,11vw,140px) 0 120px;background:linear-gradient(135deg,var(--paper) 55%,#e9efea)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:80px;align-items:end}
+.eyebrow,.section-kicker,.tag,.date,.note-label{font-size:.72rem;letter-spacing:.14em;font-weight:700;text-transform:uppercase;color:var(--blue)}
+h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-.025em}
+h1{font-size:clamp(3.1rem,7vw,6.8rem);line-height:.95;max-width:900px;margin:16px 0 28px}
+h2{font-size:clamp(2.1rem,4.5vw,4rem);line-height:1.05;margin:8px 0 24px}
+h3{font-size:1.18rem;line-height:1.2;margin:7px 0 10px}
+h4{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 7px}
+p{margin:0 0 14px}.hero-copy{font-size:1.18rem;color:var(--muted);max-width:680px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.button{display:inline-flex;gap:12px;align-items:center;text-decoration:none;border-radius:999px;padding:12px 19px;font-weight:700;font-size:.9rem}
+.button-primary{background:var(--ink);color:var(--white)}.button-secondary{border:1px solid var(--ink)}
+.hero-note{border-left:2px solid var(--green);padding-left:25px;max-width:310px}
+.note-mark{font-size:.8rem;font-weight:700;color:var(--accent)}.note-label{margin:20px 0 5px}.note-text{font:400 1.45rem/1.25 var(--serif)}
+.section{padding:110px 0}.intro-grid{display:grid;grid-template-columns:.35fr 1fr;gap:80px}.intro h2{max-width:780px}.intro p{max-width:750px;color:var(--muted);font-size:1.06rem}
+.section-soft{background:var(--soft)}.section-dark{background:var(--ink);color:var(--paper)}
+.section-head{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:55px}.section-lead{max-width:430px;color:var(--muted)}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.process article{background:var(--soft);padding:28px;min-height:230px}.process span{font-size:.75rem;font-weight:700;color:var(--accent)}.process p,.work-card p,.case-columns p,.timeline p,.credential-list p,.contact p{color:var(--muted)}
+.feature-case{display:grid;grid-template-columns:90px 1fr;gap:25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:42px 0}
+.case-number,.card-index{font:400 2.3rem var(--serif);color:var(--accent)}
+.tag{margin-bottom:9px}.case-body h3{font:400 2.2rem var(--serif)}.case-summary{font-size:1.15rem;max-width:800px}
+.case-columns{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:30px}.case-columns p{font-size:.95rem}
+.work-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}.work-card{border:1px solid var(--line);padding:34px;min-height:330px;background:var(--paper)}.work-card h3{font:400 1.7rem var(--serif)}.result{border-top:1px solid var(--line);margin-top:35px;padding-top:15px;font-size:.8rem;color:var(--ink-2)}.result span{display:block;text-transform:uppercase;letter-spacing:.1em;font-weight:700;font-size:.65rem;color:var(--blue);margin-bottom:3px}
+.content-note{font-size:.76rem;color:var(--muted);margin-top:18px}
+.experience-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:90px}.timeline{border-top:1px solid var(--line)}.timeline article{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:28px 0;border-bottom:1px solid var(--line)}.date{padding-top:5px}.muted{font-size:.9rem}
+.credentials-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:90px}.credential-list{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.credential-list article{background:var(--paper);padding:27px}.credential-list h3{font:400 1.45rem var(--serif)}
+.philosophy-grid{display:grid;grid-template-columns:.35fr 1fr;gap:50px;align-items:start}.philosophy blockquote{font:400 clamp(2rem,4vw,4rem)/1.08 var(--serif);margin:0;max-width:850px}.philosophy p:last-child{grid-column:2;color:#cbd6d3;max-width:680px;font-size:1.05rem}
+.contact{background:#e9efea}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}.contact-card{border-left:2px solid var(--accent);padding:10px 0 10px 28px;display:flex;flex-direction:column;align-items:flex-start;gap:5px}.contact-card a{font:400 1.35rem var(--serif);text-decoration:none}.contact-card a:hover{text-decoration:underline}.contact-card p:last-child{margin-top:8px}
+.footer{background:var(--ink);color:#d7e0dd;padding:24px 0;font-size:.8rem}.footer .shell{display:flex;justify-content:space-between}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:820px){
+  .nav-toggle{display:block;width:44px;height:44px;cursor:pointer}.nav-toggle span:not(.sr-only){display:block;height:2px;background:var(--ink);margin:5px 6px}
+  .nav-links{display:none;position:absolute;left:0;right:0;top:74px;background:var(--paper);padding:18px 24px 25px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:17px}.nav-links.is-open{display:flex}
+  .hero-grid,.intro-grid,.experience-grid,.credentials-grid,.contact-grid,.philosophy-grid{grid-template-columns:1fr;gap:35px}.hero-note{max-width:100%}
+  .process{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head .section-lead{margin-top:18px}
+  .philosophy p:last-child{grid-column:auto}
+}
+@media(max-width:560px){
+  .shell{width:min(calc(100% - 32px),var(--max))}.section{padding:78px 0}.hero{padding:65px 0 78px}
+  h1{font-size:clamp(2.7rem,15vw,4.2rem)}.hero-copy{font-size:1rem}.process,.work-grid,.case-columns,.credential-list{grid-template-columns:1fr}
+  .feature-case{grid-template-columns:45px 1fr;padding:30px 0}.case-body h3{font-size:1.75rem}.work-card{min-height:auto}.timeline article{grid-template-columns:1fr;gap:7px}
+  .footer .shell{display:block}.footer span{display:block;margin:4px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
