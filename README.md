@@ -19,3 +19,6 @@ A résumé PDF was not supplied in the source materials used for this build. Add
 
 ## Deployment
 For Build & Launch, deploy the static files to the client-owned GitHub repository and configure GitHub Pages.
+
+## Voice
+Client-facing portfolio prose uses first person (`I`, `my`, `me`) so the site reads as the client's own professional voice. Third-person references are reserved for factual labels or contexts where attribution is intentional.
